@@ -122,8 +122,8 @@ mvn clean install -Pconflict-resolved
 
 ## Maven-Lockfile
 
-How Maven-Lockfile can help assure all dependencies including transitive build exactly the same regardless of build
-environment. Ideally this will be done for each released version.
+How [Maven-Lockfile](https://github.com/chains-project/maven-lockfile) can help assure all dependencies including transitive build exactly the same regardless of build
+environment. Ideally this will be done for each released version. NOTE: you can see maven-lockfile is actively maintained at [MVN Repository](https://mvnrepository.com/artifact/io.github.chains-project/maven-lockfile-parent) and is the same project for 
 
 ### Build the lockfile for the current working version
 
