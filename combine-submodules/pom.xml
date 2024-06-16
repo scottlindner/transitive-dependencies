@@ -27,8 +27,13 @@
             <dependencies>
                 <dependency>
                     <groupId>org.demo</groupId>
+                    <artifactId>sub-module-a</artifactId>
+                    <version>0.0.1-SNAPSHOT</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.demo</groupId>
                     <artifactId>sub-module-b</artifactId>
-                    <version>${project.version}</version>
+                    <version>0.0.1-SNAPSHOT</version>
                 </dependency>
 
                 <dependency>
