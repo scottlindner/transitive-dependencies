@@ -3,73 +3,7 @@
   "groupId": "org.demo",
   "version": "0.0.1-SNAPSHOT",
   "lockFileVersion": 1,
-  "dependencies": [
-    {
-      "groupId": "com.google.guava",
-      "artifactId": "guava",
-      "version": "22.0",
-      "checksumAlgorithm": "SHA-256",
-      "checksum": "1158e94c7de4da480873f0b4ab4a1da14c0d23d4b1902cc94a58a6f0f9ab579e",
-      "scope": "compile",
-      "selectedVersion": "22.0",
-      "included": true,
-      "id": "com.google.guava:guava:22.0",
-      "children": [
-        {
-          "groupId": "com.google.code.findbugs",
-          "artifactId": "jsr305",
-          "version": "1.3.9",
-          "checksumAlgorithm": "SHA-256",
-          "checksum": "905721a0eea90a81534abb7ee6ef4ea2e5e645fa1def0a5cd88402df1b46c9ed",
-          "scope": "compile",
-          "selectedVersion": "1.3.9",
-          "included": true,
-          "id": "com.google.code.findbugs:jsr305:1.3.9",
-          "parent": "com.google.guava:guava:22.0",
-          "children": []
-        },
-        {
-          "groupId": "com.google.errorprone",
-          "artifactId": "error_prone_annotations",
-          "version": "2.0.18",
-          "checksumAlgorithm": "SHA-256",
-          "checksum": "cb4cfad870bf563a07199f3ebea5763f0dec440fcda0b318640b1feaa788656b",
-          "scope": "compile",
-          "selectedVersion": "2.0.18",
-          "included": true,
-          "id": "com.google.errorprone:error_prone_annotations:2.0.18",
-          "parent": "com.google.guava:guava:22.0",
-          "children": []
-        },
-        {
-          "groupId": "com.google.j2objc",
-          "artifactId": "j2objc-annotations",
-          "version": "1.1",
-          "checksumAlgorithm": "SHA-256",
-          "checksum": "2994a7eb78f2710bd3d3bfb639b2c94e219cedac0d4d084d516e78c16dddecf6",
-          "scope": "compile",
-          "selectedVersion": "1.1",
-          "included": true,
-          "id": "com.google.j2objc:j2objc-annotations:1.1",
-          "parent": "com.google.guava:guava:22.0",
-          "children": []
-        },
-        {
-          "groupId": "org.codehaus.mojo",
-          "artifactId": "animal-sniffer-annotations",
-          "version": "1.14",
-          "checksumAlgorithm": "SHA-256",
-          "checksum": "2068320bd6bad744c3673ab048f67e30bef8f518996fa380033556600669905d",
-          "scope": "compile",
-          "selectedVersion": "1.14",
-          "included": true,
-          "id": "org.codehaus.mojo:animal-sniffer-annotations:1.14",
-          "parent": "com.google.guava:guava:22.0",
-          "children": []
-        }
-      ]
-    }
-  ],
+  "dependencies": [],
   "mavenPlugins": [],
   "metaData": {
     "environment": {
