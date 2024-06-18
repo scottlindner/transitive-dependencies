@@ -32,7 +32,6 @@
                     <plugin>
                         <groupId>io.github.chains-project</groupId>
                         <artifactId>maven-lockfile</artifactId>
-                        <version>5.1.0</version>
                         <executions>
                             <execution>
                                 <phase>package</phase>
@@ -55,7 +54,6 @@
                     <plugin>
                         <groupId>io.github.chains-project</groupId>
                         <artifactId>maven-lockfile</artifactId>
-                        <version>5.1.0</version>
                         <executions>
                             <execution>
                                 <phase>verify</phase>
@@ -70,5 +68,26 @@
         </profile>
     </profiles>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.4.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.7.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.github.chains-project</groupId>
+                    <artifactId>maven-lockfile</artifactId>
+                    <version>5.1.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
