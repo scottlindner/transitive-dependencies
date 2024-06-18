@@ -13,6 +13,9 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- NOTE: The timestamp assures a fixed JAR checksum for all modules in this project so each build will produce the same JARs. -->
+        <project.build.outputTimestamp>2024-06-18T08:04:00Z</project.build.outputTimestamp>
     </properties>
 
     <modules>
