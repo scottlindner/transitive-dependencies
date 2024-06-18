@@ -100,8 +100,8 @@
   "metaData": {
     "environment": {
       "osName": "Windows 11",
-      "mavenVersion": "3.9.6",
-      "javaVersion": "17.0.9"
+      "mavenVersion": "3.9.7",
+      "javaVersion": "17.0.11"
     },
     "config": {
       "includeMavenPlugins": false,
