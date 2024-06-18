@@ -24,4 +24,51 @@
         <module>combine-submodules</module>
     </modules>
 
+    <profiles>
+        <profile>
+            <id>generate-lockfile</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.github.chains-project</groupId>
+                        <artifactId>maven-lockfile</artifactId>
+                        <version>5.1.0</version>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>validate-lockfile</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.github.chains-project</groupId>
+                        <artifactId>maven-lockfile</artifactId>
+                        <version>5.1.0</version>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>validate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
 </project>
