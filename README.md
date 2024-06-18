@@ -11,7 +11,6 @@ of this project.
 ### [ConflictTest](./combine-submodules/src/test/java/org/demo/ConflictTest.java) is dependent on method Futures.immediateVoidFuture() found in guava:29.0-jre
 
 ```java
-
 @Test
 public void whenVersionCollisionDoesNotExist_thenShouldCompile() {
     assertNotNull(Futures.immediateVoidFuture());
@@ -23,7 +22,6 @@ public void whenVersionCollisionDoesNotExist_thenShouldCompile() {
 #### before-change
 
 ```xml
-
 <dependencies>
 </dependencies>
 ```
@@ -31,7 +29,6 @@ public void whenVersionCollisionDoesNotExist_thenShouldCompile() {
 #### conflicting-change
 
 ```xml
-
 <dependencies>
     <dependency>
         <groupId>com.google.guava</groupId>
@@ -47,7 +44,6 @@ The dependencies are not changed in the resolution profile because this isn't wh
 fixed in [combine-submodules](./combine-submodules/pom.xml)
 
 ```xml
-
 <dependencies>
     <dependency>
         <groupId>com.google.guava</groupId>
@@ -65,7 +61,6 @@ conflict exists and causes problems.
 
 #### conflict-resolved
 ```xml
-
 <dependencies>
     <dependency>
         <groupId>org.demo</groupId>
@@ -232,11 +227,13 @@ mvn clean install -Pconflict-resolved
 ```
 _NOTE: Error output not shown to keep this README short._
 
-To correct this we need to regenerate the lockfile
+To correct this we need to regenerate the lockfile.
 ```shell
 mvn clean install -Pconflict-resolved -Pgenerate-lockfile
 ```
-Run the build again to confirm it now passes the lockfile check
+After running the above command you'll notice that git shows the sub-module-a lockfile.json has been updated. It now includes guava:22.0 and it's dependencies. But also notice the combine-submodules lockfile.json has not changed even though its dependency sub-module-a has changed. This is due to the exclusion of guava in the sub-module-a dependency. 
+
+Run the build again to confirm it now passes the new lockfiles work with the build.
 ```shell
 mvn clean install -Pconflict-resolved
 ```
