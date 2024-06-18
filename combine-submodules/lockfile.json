@@ -9,7 +9,7 @@
       "artifactId": "sub-module-a",
       "version": "0.0.1-SNAPSHOT",
       "checksumAlgorithm": "SHA-256",
-      "checksum": "043e83cd7f0cd0305b9ed4e723cdaf06d303369077413e0b511630eed8f1ea84",
+      "checksum": "c66db35dc5368972e2203999974a4c74bf0ced4607dddaa37e9b5648881468aa",
       "scope": "compile",
       "selectedVersion": "0.0.1-SNAPSHOT",
       "included": true,
@@ -21,7 +21,7 @@
       "artifactId": "sub-module-b",
       "version": "0.0.1-SNAPSHOT",
       "checksumAlgorithm": "SHA-256",
-      "checksum": "02861eef1cdfedfc26bcaa08a31866ac5814b1eb6121d054ff012e3e8a494b9d",
+      "checksum": "81454afbda0d088752082f56c5d567f813e7f9f460c6bf0ab4f767712642cf84",
       "scope": "compile",
       "selectedVersion": "0.0.1-SNAPSHOT",
       "included": true,
@@ -272,8 +272,8 @@
   "metaData": {
     "environment": {
       "osName": "Windows 11",
-      "mavenVersion": "3.9.6",
-      "javaVersion": "17.0.9"
+      "mavenVersion": "3.9.7",
+      "javaVersion": "17.0.11"
     },
     "config": {
       "includeMavenPlugins": false,
