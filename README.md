@@ -1,7 +1,7 @@
 # Catching Breaking Transitive Dependency Changes
 
-A demonstration of how maven-lockfile can be used to help identify when transitive dependencies have unexpectedly
-changed and how to assure this version of the build is exactly the same regardless of where or how it was run.
+A demonstration of how [maven-lockfile](https://github.com/chains-project/maven-lockfile) can be used to help identify when transitive dependencies have unexpectedly
+changed and how to assure this version of the build is exactly the same regardless of where or how it was run. You can see maven-lockfile is actively released at [MVN Repository](https://mvnrepository.com/artifact/io.github.chains-project/maven-lockfile-parent).
 
 Profiles are being used to more easily demonstrate an issue that would happen from a previous version to a new version
 of this project.
@@ -242,7 +242,7 @@ If you inspect the git diff you'll see the change to the submodule-a lockfile.js
 ## Command Line Maven-Lockfile
 
 How [Maven-Lockfile](https://github.com/chains-project/maven-lockfile) can help assure all dependencies including transitive build exactly the same regardless of build
-environment. Ideally this will be done for each released version. NOTE: you can see maven-lockfile is actively maintained at [MVN Repository](https://mvnrepository.com/artifact/io.github.chains-project/maven-lockfile-parent) and is the same project for 
+environment. Ideally this will be done for each released version.
 
 ### Build the lockfile for the current working version
 
